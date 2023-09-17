@@ -17,7 +17,6 @@ body {
 }
 
 .memes__slider{
-    /* max-width: 50%; */
     width: 70%;
     overflow-x: hidden;
     border-radius: 1rem;
@@ -60,7 +59,7 @@ body {
 
 .memes__slides{
     display: flex;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 80vh;
     justify-content: space-between;
     width: 600%;
@@ -72,10 +71,10 @@ body {
 }
 
 .memes__image_wrapper{
-    width: 25%;
+    width: 16.6%;
 }
 
-.memes__image_wrapper .memes__image{
+.memes__image{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -84,7 +83,6 @@ body {
 .meme__columns{
     display: flex;
     justify-content: space-between;
-    height: 2rem;
     width: 70%;
     align-items: center;
 }
@@ -102,7 +100,7 @@ body {
 }
 
 .meme__text{
-    margin: 0;
+    margin: auto 0;
     opacity: 0;
     width: 50vw;
     display: block;
@@ -243,10 +241,28 @@ body {
     margin-left: -500%;
 }
 
-@media (orientation: portrait){
+@media (orientation: portrait) and (max-width: 1024px) {
     .meme__columns{
         flex-direction: column-reverse;
-        height: 4rem;
         text-align: center;
+    }
+    
+    .memes__slides{
+        height: 50vh;
+    }
+
+    .meme__column_buttons {
+        width: auto;
+    }
+
+    .meme__column_text{
+        width: 100%;
+        height: 200%;
+    }
+
+    .meme__text{
+        display: inline-block;
+        font-size: 1em;
+        width: 100%;
     }
 }
