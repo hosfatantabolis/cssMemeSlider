@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS Meme Slider</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="memes__container">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img1btn" checked>
+            <input name="memeRadio" class="meme__radio" type="radio" id="img2btn">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img3btn">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img4btn">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img5btn">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img6btn">
+            <div class="meme__columns">
+                <div class="meme__column meme__column_text">
+                    <div class="meme__text_slider">
+                        <p class="meme__text" id="text1">Jesus chriSt on a bicycle!</p>
+                        <p class="meme__text" id="text2">I will find you</p>
+                        <p class="meme__text" id="text3">Who wants to earn 300k/nanosec?</p>
+                        <p class="meme__text" id="text4">Feel my pain</p>
+                        <p class="meme__text" id="text5">Oh, what fun I am going to have...</p>
+                        <p class="meme__text" id="text6">I almost gave up doing this slider. God help us all</p>
+                    </div>
+                </div>
+                <div class="meme__column meme__column_buttons">
+                    <label class="meme__radio_label" for="img1btn">
+                        <div class="meme__radio_circle" id="img1btnCircle"></div>
+                    </label>
+                    <label class="meme__radio_label" for="img2btn">
+                        <div class="meme__radio_circle" id="img2btnCircle"></div>
+                    </label>
+                    <label class="meme__radio_label" for="img3btn">
+                        <div class="meme__radio_circle" id="img3btnCircle"></div>
+                    </label>
+                    <label class="meme__radio_label" for="img4btn">
+                        <div class="meme__radio_circle" id="img4btnCircle"></div>
+                    </label>
+                    <label class="meme__radio_label" for="img5btn">
+                        <div class="meme__radio_circle" id="img5btnCircle"></div>
+                    </label>
+                    <label class="meme__radio_label" for="img6btn">
+                        <div class="meme__radio_circle" id="img6btnCircle"></div>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="memes__slider">
+                <div class="memes__slides">
+                    <div class="memes__image_wrapper"  id="img1">
+                        <img src="./images/pic1.jpg" class="memes__image" alt="pic1">                        
+                    </div>
+                    <div class="memes__image_wrapper"  id="img2">
+                        <img src="./images/pic2.jpg" class="memes__image" alt="pic2">
+                    </div>
+                    <div class="memes__image_wrapper"  id="img3">
+                        <img src="./images/pic3.jpg" class="memes__image" alt="pic3">
+                    </div>
+                    <div class="memes__image_wrapper"  id="img4">
+                        <img src="./images/pic4.jpg" class="memes__image" alt="pic4">                        
+                    </div>
+                    <div class="memes__image_wrapper"  id="img5">
+                        <img src="./images/pic5.jpg" class="memes__image" alt="pic5">
+                    </div>
+                    <div class="memes__image_wrapper"  id="img6">
+                        <img src="./images/pic6.jpg" class="memes__image" alt="pic6">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
