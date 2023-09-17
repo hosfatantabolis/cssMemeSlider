@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>CSS Meme Slider</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./normalize.css">
@@ -11,16 +11,55 @@
     </head>
     <body>
         <div class="memes__container">
-            <div class="memes__slider">
-                <div class="memes__slides">
-                    <img src="./images/pic1.jpg" class="memes__image" alt="pic1" >
-                    <img src="./images/pic2.jpg" class="memes__image" alt="pic2">
-                    <img src="./images/pic3.jpg" class="memes__image" alt="pic3">
-                    <img src="./images/pic4.jpg" class="memes__image" alt="pic4">
-                    <img src="./images/pic5.jpg" class="memes__image" alt="pic5">
-                    <img src="./images/pic6.jpg" class="memes__image" alt="pic6">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img1btn" checked>
+            <input name="memeRadio" class="meme__radio" type="radio" id="img2btn">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img3btn">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img4btn">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img5btn">
+            <input name="memeRadio" class="meme__radio" type="radio" id="img6btn">
+            <div class="meme__columns">
+                <div class="meme__column meme__column_text">
+                    <p class="meme__text">Jesus chriSt on a bicycle!</p>
+                    <p class="meme__text">Jesus chriSt on a bicycle!2</p>
+                    <p class="meme__text">Jesus chriSt on a bicycle!3</p>
+                    <p class="meme__text">Jesus chriSt on a bicycle!4</p>
+                    <p class="meme__text">Jesus chriSt on a bicycle!5</p>
+                    <p class="meme__text">Jesus chriSt on a bicycle!6</p>
+                </div>
+                <div class="meme__column meme__column_buttons">
+                    <label class="meme__radio_label" for="img1btn"></label>
+                    <label class="meme__radio_label" for="img2btn"></label>
+                    <label class="meme__radio_label" for="img3btn"></label>
+                    <label class="meme__radio_label" for="img4btn"></label>
+                    <label class="meme__radio_label" for="img5btn"></label>
+                    <label class="meme__radio_label" for="img6btn"></label>
                 </div>
             </div>
+            
+            <div class="memes__slider">
+                <div class="memes__slides">
+                    <div class="memes__image_wrapper"  id="img1">
+                        <img src="./images/pic1.jpg" class="memes__image" alt="pic1">                        
+                    </div>
+                    <div class="memes__image_wrapper"  id="img2">
+                        <img src="./images/pic2.jpg" class="memes__image" alt="pic2">
+                    </div>
+                    <div class="memes__image_wrapper"  id="img3">
+                        <img src="./images/pic3.jpg" class="memes__image" alt="pic3">
+                        
+                    </div>
+                    <div class="memes__image_wrapper"  id="img4">
+                        <img src="./images/pic4.jpg" class="memes__image" alt="pic4">                        
+                    </div>
+                    <div class="memes__image_wrapper"  id="img5">
+                        <img src="./images/pic5.jpg" class="memes__image" alt="pic5">
+                    </div>
+                    <div class="memes__image_wrapper"  id="img6">
+                        <img src="./images/pic6.jpg" class="memes__image" alt="pic6">
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </body>
 </html>
