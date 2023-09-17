@@ -242,3 +242,11 @@ body {
 #img6btn:checked ~ .meme__columns > .meme__column_text > .meme__text_slider{
     margin-left: -500%;
 }
+
+@media (orientation: portrait){
+    .meme__columns{
+        flex-direction: column-reverse;
+        height: 4rem;
+        text-align: center;
+    }
+}
